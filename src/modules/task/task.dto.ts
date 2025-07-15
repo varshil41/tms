@@ -1,6 +1,12 @@
 import { ApiProperty, ApiPropertyOptional } from "@nestjs/swagger";
 import { Transform, Type } from "class-transformer";
-import { IsDate, IsEnum, IsNotEmpty, IsOptional, IsString } from "class-validator";
+import {
+  IsDate,
+  IsEnum,
+  IsNotEmpty,
+  IsOptional,
+  IsString,
+} from "class-validator";
 import { PaginationDto } from "src/dto/pagination.dto";
 import { TaskStatus } from "../../enums/task.enum";
 

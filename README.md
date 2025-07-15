@@ -4,5 +4,5 @@ Steps to follow
 2) npm install
 3) Setup .env from taking reference of .env.example
 4) npm run migration:run
-5) jwt key creation - ssh-keygen -t ecdsa -b 256 -m PEM -f jwt.key -N "" 
+5) ssh-keygen -t ecdsa -b 256 -m PEM -f jwt.key -N "" 
 6) npm run dev

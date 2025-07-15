@@ -49,7 +49,7 @@ export class TaskController {
   @Auth()
   @Delete("delete/:id")
   @HttpCode(HttpStatus.OK)
-  async delete(@Param('id') id: string) {
+  async delete(@Param("id") id: string) {
     return {
       data: await this.taskService.delete(id),
       message: "Task deleted successfully",

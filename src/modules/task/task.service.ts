@@ -63,13 +63,17 @@ export class TaskService {
     const { search, page, limit, status } = query;
 
     const taskRepository = this.datasource.getRepository(Task);
-    const queryBuilder = taskRepository.createQueryBuilder("task")
+    const queryBuilder = taskRepository
+      .createQueryBuilder("task")
       .where("task.userId = :userId", { userId: user.id });
 
     if (search) {
-      queryBuilder.andWhere("task.title LIKE :search OR task.description LIKE :search", {
-        search: `%${search}%`,
-      });
+      queryBuilder.andWhere(
+        "task.title LIKE :search OR task.description LIKE :search",
+        {
+          search: `%${search}%`,
+        },
+      );
     }
 
     if (status) {
