@@ -85,7 +85,7 @@ async function bootstrap() {
     .setDescription("Boilerplat")
     .setVersion("1.0")
     .addBearerAuth()
-    .addServer("http://localhost:5002", "Local Env")
+    .addServer(`http://localhost:${port}`, "Local Env")
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup("api-document", app, document, {
