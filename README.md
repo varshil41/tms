@@ -8,4 +8,4 @@ Steps to follow
 6) npm run dev
 
 You can also get swagger document using this URL
-http://localhost:5002/api-document
+{BASE_URL}/api-document
