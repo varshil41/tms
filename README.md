@@ -6,3 +6,6 @@ Steps to follow
 4) npm run migration:run
 5) ssh-keygen -t ecdsa -b 256 -m PEM -f jwt.key -N "" 
 6) npm run dev
+
+You can also get swagger document using this URL
+http://localhost:5002/api-document
